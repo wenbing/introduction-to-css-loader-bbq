@@ -1,0 +1,26 @@
+{
+  "name": "introduction-to-css-loader-bbq",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "browserify test/*.js | tape-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wenbing/introduction-to-css-loader-bbq.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wenbing/introduction-to-css-loader-bbq/issues"
+  },
+  "homepage": "https://github.com/wenbing/introduction-to-css-loader-bbq#readme",
+  "devDependencies": {
+    "browserify": "^13.0.1",
+    "tape": "^4.6.0",
+    "tape-run": "^2.1.4",
+    "webpack-bbq": "^2.1.2"
+  }
+}
