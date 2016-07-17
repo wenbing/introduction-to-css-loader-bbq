@@ -11,11 +11,17 @@ tape(42, (t) => {
 
 tape('public', t => {
   t.plan(2)
-
   const red = 'color: red;';
   const contents = fs.readFileSync(path.resolve(__dirname, '../public/client.bundle.js'), { encoding: 'utf8' });
   t.ok(contents.indexOf(red) !== -1, 'public contents is ok');
   t.ok(require('../lib/client.css.js').__cssText__.indexOf(red) !== -1, 'lib cssText is ok');
 });
 
+tape('composes', t => {
+  t.plan(2);
+  const r = /(\w+)__bar___(\w+) (\w+)__bgred___(\w+)/;
+  const contents = fs.readFileSync(path.resolve(__dirname, '../public/client.bundle.js'), { encoding: 'utf8' });
+  t.ok(r.test(contents), 'public contents is ok');
+  t.ok(r.test(require('../lib/client.css.js').bar), 'lib cssText is ok');
+});
 

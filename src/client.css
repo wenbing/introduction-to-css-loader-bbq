@@ -1,3 +1,20 @@
-.bar {
-  color: red;
+.bgRed {
+  background-color: red;
 }
+
+.bar {
+  composes: bgRed;
+  composes: textUnderline from './text.css';
+  color: green;
+}
+
+:global(.baz) {
+  background-color: red;
+}
+
+/*
+:global(.baz) {
+  composes: bgRed;
+}
+*/
+

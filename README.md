@@ -1,3 +1,5 @@
+### step-1
+
 ```txt
 ➜  introduction-to-css-loader-bbq git:(step-1) ✗ npm test
 
@@ -27,4 +29,11 @@
 > # pass  2
 >
 > # ok
+```
+
+### step-2
+
+```txt
+ERROR in ./src/client.css
+    Module build failed: Error: composition is only allowed when selector is single :local class name not in ".baz", ".baz" is weird
 ```
