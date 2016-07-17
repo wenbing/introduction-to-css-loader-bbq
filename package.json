@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "browserify -t brfs test/*.js | tape-run"
+    "test": "node test/*.js & browserify -t brfs test/*.js | tape-run"
   },
   "repository": {
     "type": "git",
