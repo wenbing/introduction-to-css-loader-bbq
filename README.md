@@ -1,3 +1,26 @@
+Introduction to css-loader-bbq
+=====
+
+### Getting Start
+
+```sh
+npm install
+```
+
+
+### Build
+
+```sh
+./node_modules/.bin/webpack
+```
+
+### Test
+
+```sh
+npm test
+```
+
+
 ### step-1
 
 ```txt
