@@ -138,6 +138,9 @@ import ConnectedDialog, {
 
 #### server rendering?
 
+```js
+require('@mtfe/meishi-dialog/lib/Dialog.css').__cssText__;
+```
 
 
 
