@@ -10,5 +10,4 @@ function render(theme) {
   return el;
 }
 
-exports.rendera = () => render(a);
-exports.renderb = () => render(b);
+render(b);

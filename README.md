@@ -20,6 +20,12 @@ npm install
 npm test
 ```
 
+### Manual
+
+```sh
+cat public/theming.bundle.js | ./node_modules/.bin/browser-run -b chrome
+```
+
 
 ### step-1
 
