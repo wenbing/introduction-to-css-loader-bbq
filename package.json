@@ -18,9 +18,15 @@
   },
   "homepage": "https://github.com/wenbing/introduction-to-css-loader-bbq#readme",
   "devDependencies": {
+    "@mtfe/meishi-dialog": "^1.0.0",
     "brfs": "^1.4.3",
     "browserify": "^13.0.1",
     "postcss-modules-values": "^1.1.3",
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8",
+    "react-redux": "^4.4.5",
+    "redux": "^3.5.2",
+    "redux-thunk": "^2.1.0",
     "tape": "^4.6.0",
     "tape-run": "^2.1.4",
     "webpack-bbq": "^2.1.2"

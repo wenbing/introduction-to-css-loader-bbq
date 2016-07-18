@@ -8,6 +8,7 @@ module.exports = webpackbbq(config)({
     client: require.resolve('./src/client'),
     theming: require.resolve('./src/theming'),
     variables: require.resolve('./src/variables'),
+    dialog: require.resolve('./src/dialog'),
   },
   postcss: [ values ],
 }, {

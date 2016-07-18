@@ -126,4 +126,19 @@ var _themeB2 = _interopRequireDefault(_themeB);
 	};
 ```
 
+### node_modules usage
+
+```js
+import ConnectedDialog, {
+  dialogActionCreators,
+  dialogReducer,
+} from '@mtfe/meishi-dialog/lib/ConnectedDialog';
+// -> Dialog.js -> Dialog.css
+```
+
+#### server rendering?
+
+
+
+
 
