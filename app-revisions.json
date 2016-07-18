@@ -1,4 +1,5 @@
 {
   "client.js": "client.bundle.js",
-  "theming.js": "theming.bundle.js"
+  "theming.js": "theming.bundle.js",
+  "variables.js": "variables.bundle.js"
 }

@@ -1,0 +1,10 @@
+@value colors: "./colors.css";
+@value blue, red, green from colors;
+
+.button {
+  composes: textUnderline from './text.css';
+  color: blue;
+  background-color: red;
+  display: inline-block;
+  /* background-image: url('./demo.png'); */ 
+}
