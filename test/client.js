@@ -19,9 +19,9 @@ tape('public', t => {
 
 tape('composes', t => {
   t.plan(2);
-  const r = /(\w+)__bar___(\w+) (\w+)__bgred___(\w+)/;
+  const r = /(\w+)__bar___(\w+) (\w+)__bgRed___(\w+)/;
   const contents = fs.readFileSync(path.resolve(__dirname, '../public/client.bundle.js'), { encoding: 'utf8' });
   t.ok(r.test(contents), 'public contents is ok');
-  t.ok(r.test(require('../lib/client.css.js').bar), 'lib cssText is ok');
+  t.ok(r.test(require('../lib/client.css').bar), 'lib cssText is ok');
 });
 
