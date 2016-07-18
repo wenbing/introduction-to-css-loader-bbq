@@ -95,4 +95,35 @@ __webpack_public_path__ -> webpack/lib/APIPlugin
 How to?
 
 
+### Step-5
+
+// lib/theming.js
+
+```js
+var _themeA = require('./theme-a.css');
+
+var _themeA2 = _interopRequireDefault(_themeA);
+
+var _themeB = require('./theme-b.css');
+
+var _themeB2 = _interopRequireDefault(_themeB);
+```
+
+// public/theming.bundle.js
+
+```js
+	exports = module.exports = __webpack_require__(23)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, ".theme-a__outer___17WEL { background: green; }\n.theme-a__inner___vqwuf { color: blue; }\n", ""]);
+	
+	// exports
+	exports.locals = {
+		"outer": "theme-a__outer___17WEL",
+		"inner": "theme-a__inner___vqwuf"
+	};
+```
+
 
